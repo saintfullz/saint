@@ -26,13 +26,13 @@
             padding: 1rem 0;
             text-align: center;
             border-radius: 10px;
-            font-size: 1.5rem;
+            font-size: 2rem;
             box-shadow: 0 0 15px 5px rgba(16, 16, 16, 0.8);
         }
 
         header img {
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
             margin-right: 10px;
             vertical-align: middle;
         }
@@ -69,14 +69,14 @@
         }
 
         .hero h1 {
-            font-size: 2rem;
+            font-size: 3rem;
             color: #101010; /* Neon black-ish color */
             text-shadow: 0 0 15px #101010;
         }
 
         section {
             background: rgba(0, 0, 0, 0.7); /* Slightly transparent dark background */
-            padding: 1.5rem;
+            padding: 2rem;
             margin-top: 2rem;
             border-radius: 10px;
             box-shadow: 0 0 20px 5px rgba(16, 16, 16, 0.8);
@@ -84,8 +84,8 @@
 
         .languages {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
             text-align: center;
         }
 
@@ -118,15 +118,19 @@
         }
 
         .icon {
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
             margin-top: 1rem;
         }
 
         /* Ensure responsiveness */
         @media (max-width: 768px) {
             header {
-                font-size: 1.2rem;
+                font-size: 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
             }
 
             nav ul {
@@ -154,25 +158,11 @@
 
         @media (max-width: 480px) {
             header {
-                font-size: 1rem;
-                padding: 0.8rem;
-            }
-
-            .hero h1 {
                 font-size: 1.2rem;
             }
 
-            nav ul {
-                flex-direction: column;
-                padding: 0.5rem;
-            }
-
-            nav ul li {
-                margin: 0.5rem 0;
-            }
-
-            section {
-                padding: 0.8rem;
+            .hero h1 {
+                font-size: 1.5rem;
             }
 
             .languages {
@@ -182,11 +172,6 @@
 
             .language {
                 padding: 1rem;
-            }
-
-            .icon {
-                width: 30px;
-                height: 30px;
             }
         }
     </style>
@@ -208,7 +193,7 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello, I'm a 14-year-old coder and I can make menus, websites, and more!</p>
+        <p>I'm a 14-year-old coder and I make websites. My languages are Python, HTML, and more. Just hit me up if you want anything.</p>
     </section>
 
     <section id="languages">
